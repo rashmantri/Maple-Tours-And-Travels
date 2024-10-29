@@ -10,47 +10,48 @@ const Navbar = () => {
 	}
 
 	return (
-		<div className="flex justify-between items-center py-4 px-6  shadow-md sticky top-0 z-50 bg-orange-400">
+		<div className="flex justify-between items-center py-2 px-6  shadow-md sticky top-0 z-50 bg-amber-600 overflow-x-hidden">
 			<div className="flex items-center ">
 				<img
 					alt="logo"
-					className="w-12 h-12 rounded-full mr-4"
+					className="w-14 h-14 rounded-full  mr-4"
 					src="src/assets/logo.jpg"
 				/>
+
 				<h1 className="text-2xl font-extrabold text-gray-800 whitespace-nowrap">
-					Maple Tours and Travels
+					Maple Tours & Travels
 				</h1>
 			</div>
 
 			{/* Desktop Links */}
 			<div className="hidden md:flex items-center">
-				<ul className="flex space-x-8 text-lg font-semibold">
+				<ul className="flex space-x-8 text-xl font-bold font-semibold">
 					<li>
 						<Link
 							to="/"
-							className="text-gray-800 hover:text-blue-500 transition-colors">
+							className="text-gray-800 hover:text-gray-300 transition-colors">
 							Home
 						</Link>
 					</li>
 					<li>
 						<Link
 							to="/about"
-							className="text-gray-800 hover:text-blue-500 transition-colors">
+							className="text-gray-800 hover:text-gray-300 transition-colors">
 							About Us
 						</Link>
 					</li>
 					<li>
 						<Link
-							to="/contact"
-							className="text-gray-800 hover:text-blue-500 transition-colors">
-							Contact
+							to="/tourPackages"
+							className="text-gray-800 hover:text-gray-300 transition-colors">
+							Tour Packages
 						</Link>
 					</li>
 					<li>
 						<Link
-							to="/tourPackages"
-							className="text-gray-800 hover:text-blue-500 transition-colors">
-							Tour Packages
+							to="/contact"
+							className="text-gray-800 hover:text-gray-300 transition-colors">
+							Contact Us
 						</Link>
 					</li>
 				</ul>
